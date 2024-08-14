@@ -1,0 +1,1250 @@
+/*================ Medical Clinic Theme ================
+Theme Name: Medical Clinic
+Description: A modern and responsive theme for medical clinics.
+Author: Your Name
+Version: 1.0.0
+Date: July 27, 2024
+========================================================*/
+
+/*================ Reset and Base Styles ================*/
+
+/* Reset some default browser styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4; /* Light grey background for overall page */
+    color: #333;
+    overflow-x: hidden
+}
+
+a {
+    color: #01579b; /* Primary blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #014f86; /* Darker blue on hover */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*================ Utility Classes ================*/
+
+/* Centering elements */
+.text-center {
+    text-align: center;
+}
+
+/* Margin utilities */
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/*================ Header and Navigation ================*/
+
+.home-header {
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.home-header .navbar-brand {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.home-header .nav-link {
+    color: #01579b;
+    transition: color 0.3s ease;
+}
+
+.home-header .nav-link:hover {
+    color: #014f86;
+}
+
+/*================ Medical Clinic Theme (index.html) ================*/
+
+/*================ Medical Clinic Theme ================*/
+
+/* Header Styles */
+.home-header {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.home-header .home-logo {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.home-header .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.home-header .nav-link:hover {
+    color: #014f86; /* Darker blue on hover */
+}
+
+.home-header .btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.home-header .btn-primary:hover {
+    background-color: #00408b;
+}
+
+/*================ Hero Section ================*/
+
+.home-hero {
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.home-hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+
+.home-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+.home-hero-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0056b3;
+    border-color: #0056b3;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.home-hero-btn:hover {
+    background-color: #00408b;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .home-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .home-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .home-hero-btn {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+/*================ About Section ================*/
+
+.home-about {
+    background-color: #f8f9fa;
+}
+
+.home-about-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    margin-bottom: 20px;
+}
+
+.home-about-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.home-about-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0056b3;
+    border-color: #0056b3;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.home-about-btn:hover {
+    background-color: #00408b;
+}
+
+.home-about-img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .home-about-title {
+        font-size: 2rem;
+    }
+    
+    .home-about-text {
+        font-size: 1rem;
+    }
+    
+    .home-about-btn {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+/*================ Services Section ================*/
+
+.home-services {
+    background: #ffffff; /* White background for the services section */
+    padding: 60px 0;
+}
+
+.home-services-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b; /* Primary blue color for the service titles */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced text shadow for better readability */
+}
+
+.home-service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Center card */
+}
+
+.home-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.2); /* Light blue overlay */
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.home-service-card:hover::before {
+    opacity: 0; /* Hide overlay on hover */
+}
+
+.home-service-card:hover {
+    transform: translateY(-20px); /* Increase lift effect */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    background: #e1f5fe; /* Light blue background on hover */
+}
+
+.home-service-icon {
+    color: #0288d1; /* Main color for icons */
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-service-icon:hover {
+    color: #01579b; /* Darker color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.home-service-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-service-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333; /* Dark grey color for service descriptions */
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .home-services-title {
+        font-size: 2rem;
+    }
+    
+    .home-service-card {
+        padding: 20px;
+    }
+    
+    .home-service-title {
+        font-size: 1.5rem;
+    }
+    
+    .home-service-description {
+        font-size: 0.875rem;
+    }
+}
+
+/*================ Testimonials Section ================*/
+
+.home-testimonials {
+    background: linear-gradient(135deg, #cfd8dc, #90a4ae); /* Linear gradient with grey tones */
+    padding: 60px 0;
+}
+
+.home-testimonials-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b; /* Main color for the title */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced text shadow for better readability */
+}
+
+.home-testimonials-slider {
+    position: relative;
+}
+
+.home-testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin: 0 auto;
+}
+
+.home-testimonial-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.home-testimonial-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.home-testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-testimonial-avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.home-testimonial-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.home-testimonial-role {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Slick Carousel Styles */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 24px;
+    color: #0288d1;
+}
+
+.slick-prev{left: -10px!important;}
+
+.slick-next {right: -10px!important;}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #01579b;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .home-testimonials-title {
+        font-size: 2rem;
+    }
+    
+    .home-testimonial-card {
+        padding: 20px;
+    }
+    
+    .home-testimonial-name {
+        font-size: 1rem;
+    }
+    
+    .home-testimonial-role {
+        font-size: 0.75rem;
+    }
+}
+
+/*================ Contact Section ================*/
+
+.home-contact {
+    background: #f5f5f5;
+    padding: 60px 0;
+}
+
+.home-contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home-contact-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.home-contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-contact-input,
+.home-contact-textarea {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.home-contact-button {
+    background: #0288d1;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.home-contact-button:hover {
+    background: #01579b;
+}
+
+.home-contact-address {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.home-contact-map iframe {
+    border-radius: 8px;
+}
+
+/*================ Call to Action Section ================*/
+
+.home-cta {
+    background: linear-gradient(135deg, #0288d1, #01579b); /* Gradient with primary colors */
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.home-cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-cta-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.home-cta-button {
+    background: #ffffff;
+    color: #01579b;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-cta-button:hover {
+    background: #0288d1;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .home-cta-title {
+        font-size: 2rem;
+    }
+    
+    .home-cta-description {
+        font-size: 1rem;
+    }
+    
+    .home-cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/*================ Footer Section ================*/
+
+.home-footer {
+    background: #01579b; /* Primary blue color for footer background */
+    color: #ffffff; /* White text color for footer */
+    padding: 60px 0;
+}
+
+.home-footer-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.home-footer-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.home-footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.home-footer-links li {
+    margin-bottom: 10px;
+}
+
+.home-footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-footer-links a:hover {
+    text-decoration: underline;
+    color: #e0f7fa; /* Light blue on hover */
+
+}
+
+.home-footer-contact {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.home-footer-copy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/*================ Medical Clinic Theme (about.html) ================*/
+
+/*================ About Section ================*/
+
+.ab-about {
+    background: #f0f4f8; /* Light background color */
+    padding: 60px 0;
+}
+
+.ab-about-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ab-about-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ab-about-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*================ Our Team Section ================*/
+
+.ab-team {
+    background: #ffffff; /* White background color */
+    padding: 60px 0;
+}
+
+.ab-team-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.ab-team-member {
+    margin-bottom: 30px;
+}
+
+.ab-team-member-img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.ab-team-member-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #01579b;
+    margin-bottom: 5px;
+}
+
+.ab-team-member-role {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+/*================ Testimonials Section ================*/
+
+.ab-testimonials {
+    background: #f9f9f9; /* Light background color */
+    padding: 60px 0;
+}
+
+.ab-testimonials-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.ab-testimonial {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff; /* White background for testimonial blocks */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+}
+
+.ab-testimonial-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ab-testimonial-author {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #01579b;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ab-testimonial-role {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+}
+
+/* Slick Carousel Styles */
+.slick-slide {
+    padding: 0 15px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 1.5rem;
+    color: #01579b;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-dots li button:before {
+    color: #01579b;
+}
+
+/*================ Contact Section ================*/
+
+.ab-contact {
+    background: #ffffff; /* White background color */
+    padding: 60px 0;
+}
+
+.ab-contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ab-contact-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ab-contact-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+}
+
+.ab-contact-info li {
+    margin-bottom: 15px;
+}
+
+.ab-contact-info i {
+    color: #01579b;
+    margin-right: 10px;
+}
+
+.ab-contact-form .form-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.ab-contact-form .form-control {
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.ab-contact-form .btn-primary {
+    background-color: #01579b;
+    border-color: #01579b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.ab-contact-form .btn-primary:hover {
+    background-color: #014f86;
+    border-color: #014f86;
+}
+
+/*================ Medical Clinic Theme (services.html) ================*/
+
+/*================ Services Section ================*/
+
+.ser-services {
+    background: #f0f4f8; /* Light background color */
+    padding: 60px 0;
+}
+
+.ser-services-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.ser-service-card {
+    background: #ffffff; /* White background color */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.ser-service-icon {
+    color: #01579b;
+    margin-bottom: 20px;
+}
+
+.ser-service-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #01579b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.ser-service-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+/*================ FAQ Section ================*/
+
+.ser-faq {
+    background: #ffffff; /* White background color */
+    padding: 60px 0;
+}
+
+.ser-faq-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.ser-faq-item {
+    background: #f9f9f9; /* Light grey background for FAQ items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.ser-faq-question {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #01579b;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.ser-faq-answer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+/*================ Meet Our Doctors Section ================*/
+
+.doc-meet-our-doctors {
+    background: #f0f4f8; /* Light background color */
+    padding: 60px 0;
+}
+
+.doc-meet-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.doc-doctor-card {
+    background: #ffffff; /* White background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.doc-doctor-photo {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.doc-doctor-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #01579b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.doc-doctor-specialty {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.doc-doctor-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+/*================ Doctor Details Section ================*/
+
+.doc-doctor-details {
+    background: #ffffff; /* White background color */
+    padding: 60px 0;
+}
+
+.doc-doctor-details-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.doc-carousel {
+    /* Ensure the carousel occupies full width */
+    width: 100%;
+}
+
+.doc-doctor-card {
+    background: #f9f9f9; /* Light grey background for the card */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.doc-doctor-details .doc-doctor-photo {
+    width: 80%; /* Make image smaller for better alignment */
+    height: auto;
+    border-radius: 20px; /* Make image round */
+    margin: 0 auto 20px; /* Center the image and add space below */
+}
+
+.doc-doctor-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #01579b;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.doc-doctor-specialty {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.doc-doctor-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.doc-doctor-detail-info {
+    list-style: none;
+    padding: 0;
+}
+
+.doc-doctor-detail-info li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.doc-doctor-detail-info i {
+    color: #01579b;
+    margin-right: 10px;
+}
+
+/* Slick Carousel Styles */
+.slick-slide {
+    margin: 0 15px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px;
+    color: #01579b;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #01579b;
+}
+
+/*================ Medical Clinic Theme (contact.html) ================*/
+
+/*================ Contact Information Section ================*/
+
+.con-contact-info {
+    background: #ffffff; /* White background color */
+    padding: 60px 0;
+}
+
+.con-contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.con-contact-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.con-contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.con-contact-details li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.con-contact-details i {
+    color: #01579b;
+    margin-right: 10px;
+}
+
+.con-contact-form .form-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.con-contact-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.con-contact-form .btn {
+    background-color: #01579b;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.con-contact-form .btn:hover {
+    background-color: #014f86;
+    color: #fff;
+}
+
+/*================ Map & Location Section ================*/
+
+.con-map-location {
+    background: #f4f4f4; /* Light grey background color */
+    padding: 60px 0;
+}
+
+.con-map-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.con-map-container {
+    text-align: center;
+}
+
+.con-map {
+    border-radius: 8px; /* Rounded corners for the map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*================ Social Media Links Section ================*/
+
+.con-social-media {
+    background: #ffffff; /* White background color */
+    padding: 60px 0;
+}
+
+.con-social-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.con-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.con-social-link {
+    font-size: 2rem; /* Size of social media icons */
+    transition: color 0.3s ease;
+}
+
+/* Specific colors for social media icons */
+.con-social-link.facebook {
+    color: #3b5998; /* Facebook color */
+}
+
+.con-social-link.twitter {
+    color: #1da1f2; /* Twitter color */
+}
+
+.con-social-link.instagram {
+    color: #e4405f; /* Instagram color */
+}
+
+.con-social-link.linkedin {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.con-social-link.youtube {
+    color: #ff0000; /* YouTube color */
+}
+
+/* Hover effect */
+.con-social-link:hover {
+    opacity: 0.8; /* Slightly dim the icon on hover */
+}
+
+/*================ Working Hours and FAQ Section ================*/
+
+.app-working-hours-faq {
+    background: #ffffff; /* White background for the section */
+    padding: 80px 0;
+}
+
+.app-working-hours-title,
+.app-faq-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b; /* Primary blue color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.app-working-hours-list {
+    font-size: 1rem;
+    color: #333; /* Dark grey text color */
+}
+
+.app-faq-accordion .accordion-button {
+    background-color: #e9ecef; /* Light grey background for accordion headers */
+    border: 1px solid #dee2e6; /* Grey border */
+    color: #333; /* Dark grey text color */
+}
+
+.app-faq-accordion .accordion-button:not(.collapsed) {
+    color: #01579b; /* Primary blue color */
+    background-color: #ffffff; /* White background for open accordion items */
+}
+
+.app-faq-accordion .accordion-body {
+    font-size: 1rem;
+    color: #333; /* Dark grey text color */
+}
+
+/*================ Contact Information Section ================*/
+
+.app-contact-info {
+    background: #f9f9f9; /* Light grey background for the section */
+    padding: 80px 0;
+}
+
+.app-contact-info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #01579b; /* Primary blue color */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.app-contact-info-address {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #01579b; /* Primary blue color */
+}
+
+.app-contact-info-text {
+    font-size: 1rem;
+    color: #333; /* Dark grey text color */
+}
+
+.app-contact-info-map-container {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #e0e0e0; /* Light grey border */
+}

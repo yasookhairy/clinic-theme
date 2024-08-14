@@ -1,0 +1,54 @@
+/my-clinic-website
+│
+├── /assets               # مجلد للموارد العامة
+│   ├── /css              # ملفات CSS
+│   │   ├── main.css      # ملف CSS الرئيسي
+│   │   ├── aos.css       # مكتبة AOS
+│   │   ├── animate.css   # مكتبة Animate.css
+│   │   ├── hover.css     # مكتبة Hover.css
+│   │   └── slick.css     # مكتبة Slick Carousel
+│   │
+│   ├── /js               # ملفات JavaScript
+│   │   ├── main.js       # ملف JavaScript الرئيسي
+│   │   ├── aos.js        # مكتبة AOS
+│   │   ├── slick.js      # مكتبة Slick Carousel
+│   │   └── other-scripts.js # سكربتات أخرى
+│   │
+│   ├── /images           # صور الموقع
+│   │   ├── logo.png      # شعار العيادة
+│   │   ├── banner.jpg    # صور البانر
+│   │   └── services/     # صور الخدمات
+│   │
+│   ├── /fonts            # خطوط مخصصة
+│   │   └── custom-fonts/ # خطوط مخصصة
+│   │
+│   └── /vendor           # مكتبات الطرف الثالث (إذا لم تستخدم CDN)
+│       ├── bootstrap/
+│       ├── aos/
+│       ├── animate.css/
+│       ├── hover.css/
+│       └── slick-carousel/
+│
+├── /pages                # صفحات الموقع
+│   ├── index.html        # الصفحة الرئيسية
+│   ├── about.html        # صفحة عن العيادة
+│   ├── services.html     # صفحة الخدمات
+│   ├── contact.html      # صفحة التواصل معنا
+│   ├── blog.html         # صفحة المقالات والأخبار
+│   ├── booking.html      # صفحة الحجز عبر الإنترنت
+│   └── privacy-policy.html # صفحة الخصوصية والشروط
+│
+├── /partials             # أجزاء قابلة لإعادة الاستخدام
+│   ├── header.html       # رأس الصفحة
+│   ├── footer.html       # تذييل الصفحة
+│   └── navbar.html       # قائمة التنقل
+│
+├── /includes             # ملفات PHP أو تشمل أخرى (إذا كنت تستخدم خادمًا ديناميكيًا)
+│   └── config.php        # إعدادات الموقع
+│
+├── /data                 # بيانات الموقع (مثل ملفات JSON)
+│   └── services.json     # بيانات الخدمات
+│
+├── .gitignore            # لتجاهل الملفات عند استخدام Git
+├── README.md             # ملف معلومات المشروع
+└── LICENSE               # ملف الرخصة

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Clinic</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <!-- AOS (Animate On Scroll) CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/hover.css@2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Slick Carousel CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="home-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Clinic Logo" class="home-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homeNavbarNav" aria-controls="homeNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="homeNavbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html"><i class="fas fa-stethoscope"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="appointment.html"><i class="fas fa-calendar-alt"></i> Book an Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Meet Our Doctors Section -->
+<section class="doc-meet-our-doctors py-5" id="meet-doctors">
+    <div class="container">
+        <h2 class="doc-meet-title text-center" data-aos="fade-up" data-aos-duration="1000">Meet Our Doctors</h2>
+        <div class="row">
+            <!-- Doctor 1 -->
+            <div class="col-md-4">
+                <div class="doc-doctor-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="assets/images/doc1.png" alt="Doctor Photo" class="doc-doctor-photo">
+                    <h4 class="doc-doctor-name">Dr. John Smith</h4>
+                    <p class="doc-doctor-specialty">Cardiologist</p>
+                    <p class="doc-doctor-description">
+                        Dr. John Smith is a renowned cardiologist with over 15 years of experience in treating heart conditions.
+                    </p>
+                </div>
+            </div>
+            <!-- Doctor 2 -->
+            <div class="col-md-4">
+                <div class="doc-doctor-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="assets/images/doc2.png" alt="Doctor Photo" class="doc-doctor-photo">
+                    <h4 class="doc-doctor-name">Dr. Emily Johnson</h4>
+                    <p class="doc-doctor-specialty">Pediatrician</p>
+                    <p class="doc-doctor-description">
+                        Dr. Emily Johnson specializes in pediatric care, providing comprehensive medical services to children.
+                    </p>
+                </div>
+            </div>
+            <!-- Doctor 3 -->
+            <div class="col-md-4">
+                <div class="doc-doctor-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="assets/images/doc3.png" alt="Doctor Photo" class="doc-doctor-photo">
+                    <h4 class="doc-doctor-name">Dr. Sarah Williams</h4>
+                    <p class="doc-doctor-specialty">Orthopedic Surgeon</p>
+                    <p class="doc-doctor-description">
+                        Dr. Sarah Williams is an expert orthopedic surgeon with extensive experience in bone and joint treatments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Doctor Details Section -->
+<section class="doc-doctor-details py-5" id="doctor-details">
+    <div class="container">
+        <h2 class="doc-doctor-details-title text-center" data-aos="fade-up" data-aos-duration="1000">Meet Our Doctors</h2>
+        <div class="doc-carousel">
+            <div class="doc-doctor-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="assets/images/doc1.png" alt="Doctor Photo" class="doc-doctor-photo">
+                <h4 class="doc-doctor-name">Dr. John Smith</h4>
+                <p class="doc-doctor-specialty">Cardiologist</p>
+                <p class="doc-doctor-description">
+                    Dr. John Smith is a renowned cardiologist specializing in heart disease prevention and treatment. With over 15 years of experience, he is committed to providing the highest quality care to his patients.
+                </p>
+                <ul class="doc-doctor-detail-info">
+                    <li><i class="fas fa-calendar-check"></i> Available: Mon-Fri, 9 AM - 5 PM</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Location: 123 Medical Lane, Health City</li>
+                    <li><i class="fas fa-phone"></i> Phone: +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: john.smith@medicalclinic.com</li>
+                </ul>
+            </div>
+            <div class="doc-doctor-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="assets/images/doc3.png" alt="Doctor Photo" class="doc-doctor-photo">
+                <h4 class="doc-doctor-name">Dr. Emily Johnson</h4>
+                <p class="doc-doctor-specialty">Pediatrician</p>
+                <p class="doc-doctor-description">
+                    Dr. Emily Johnson provides expert pediatric care, focusing on the well-being and health of children from infancy through adolescence. Her compassionate approach ensures the best care for young patients.
+                </p>
+                <ul class="doc-doctor-detail-info">
+                    <li><i class="fas fa-calendar-check"></i> Available: Mon-Fri, 9 AM - 5 PM</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Location: 123 Medical Lane, Health City</li>
+                    <li><i class="fas fa-phone"></i> Phone: +123 456 7891</li>
+                    <li><i class="fas fa-envelope"></i> Email: emily.johnson@medicalclinic.com</li>
+                </ul>
+            </div>
+            <!-- Add more doctor cards as needed -->
+        </div>
+    </div>
+</section>
+
+    
+<!-- Footer Section -->
+<footer class="home-footer py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-4">
+                <h4 class="home-footer-title">About Us</h4>
+                <p class="home-footer-description">
+                    We are dedicated to providing the highest quality of medical care to our patients. Our experienced team is here to ensure your health and well-being.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h4 class="home-footer-title">Quick Links</h4>
+                <ul class="home-footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h4 class="home-footer-title">Contact Info</h4>
+                <p class="home-footer-contact">
+                    <strong>Address:</strong> 123 Health St, Wellness City, HC 12345<br>
+                    <strong>Phone:</strong> (123) 456-7890<br>
+                    <strong>Email:</strong> contact@clinic.com
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <p class="home-footer-copy">&copy; 2024 Your Clinic Name. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery from CDN (for Nice Scroll and other plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS and dependencies from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Slick Carousel JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>

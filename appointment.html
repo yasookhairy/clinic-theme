@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Clinic</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <!-- AOS (Animate On Scroll) CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/hover.css@2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Slick Carousel CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="home-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Clinic Logo" class="home-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homeNavbarNav" aria-controls="homeNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="homeNavbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html"><i class="fas fa-stethoscope"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="appointment.html"><i class="fas fa-calendar-alt"></i> Book an Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Appointment Section -->
+    <section class="ser-appointment-section py-5" id="appointment">
+        <div class="container">
+            <h2 class="ser-appointment-title text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Book an Appointment</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form action="#" method="POST" class="ser-appointment-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Preferred Date</label>
+                                <input type="date" id="date" name="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="time" class="form-label">Preferred Time</label>
+                                <input type="time" id="time" name="time" class="form-control" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="notes" class="form-label">Additional Notes</label>
+                                <textarea id="notes" name="notes" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary">Submit Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Working Hours and FAQ Section -->
+<section class="app-working-hours-faq py-5" id="working-hours-faq">
+    <div class="container">
+        <div class="row">
+            <!-- Working Hours -->
+            <div class="col-md-6 mb-4">
+                <h3 class="app-working-hours-title" data-aos="fade-up" data-aos-duration="1000">Our Working Hours</h3>
+                <ul class="list-unstyled app-working-hours-list">
+                    <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Saturday:</strong> 9:00 AM - 2:00 PM</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+            </div>
+            <!-- FAQ -->
+            <div class="col-md-6 mb-4">
+                <h3 class="app-faq-title" data-aos="fade-up" data-aos-duration="1000">Frequently Asked Questions</h3>
+                <div class="accordion app-faq-accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What should I bring to my appointment?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Please bring your ID, insurance card, and any medical records relevant to your visit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do I cancel or reschedule an appointment?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can cancel or reschedule your appointment by calling our office or using our online scheduling system.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Information Section -->
+<section class="app-contact-info py-5" id="contact-info">
+    <div class="container">
+        <h2 class="app-contact-info-title text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3 class="app-contact-info-address" data-aos="fade-up" data-aos-duration="1000">Our Location</h3>
+                <p class="app-contact-info-text">
+                    123 Medical Street, Health City, HC 12345
+                </p>
+                <p class="app-contact-info-text">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </p>
+                <p class="app-contact-info-text">
+                    <strong>Email:</strong> contact@medicalclinic.com
+                </p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3 class="app-contact-info-map" data-aos="fade-up" data-aos-duration="1000">Find Us on the Map</h3>
+                <div class="app-contact-info-map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.9170958355665!2d-122.08380043830675!3d37.38747495922504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb58c6b8d2b79%3A0x7074c755b5e4c8f0!2s123%20Medical%20St%2C%20Mountain%20View%2C%20CA%2094302!5e0!3m2!1sen!2sus!4v1609782611845!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="home-footer py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-4">
+                <h4 class="home-footer-title">About Us</h4>
+                <p class="home-footer-description">
+                    We are dedicated to providing the highest quality of medical care to our patients. Our experienced team is here to ensure your health and well-being.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h4 class="home-footer-title">Quick Links</h4>
+                <ul class="home-footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h4 class="home-footer-title">Contact Info</h4>
+                <p class="home-footer-contact">
+                    <strong>Address:</strong> 123 Health St, Wellness City, HC 12345<br>
+                    <strong>Phone:</strong> (123) 456-7890<br>
+                    <strong>Email:</strong> contact@clinic.com
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <p class="home-footer-copy">&copy; 2024 Your Clinic Name. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery from CDN (for Nice Scroll and other plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS and dependencies from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Slick Carousel JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>

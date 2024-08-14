@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Template Documentation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> </head>
+
+<body>
+    <div class="d-flex">
+        <nav class="sidebar bg-dark">
+            <div class="sidebar-header p-3 text-white">
+                <h4>Documentation</h4> </div>
+            <ul class="nav flex-column">
+                <li class="nav-item"> <a class="nav-link" href="#introduction"><i class="fas fa-info-circle"></i> Introduction</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#getting-started"><i class="fas fa-play-circle"></i> Getting Started</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#html-structure"><i class="fas fa-code"></i> HTML Structure</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#framework-libraries"><i class="fas fa-book"></i> framework-libraries</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#index"><i class="fas fa-home"></i> Index Page</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#about"><i class="fas fa-info"></i> About Page</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#appointment"><i class="fas fa-calendar-check"></i> Appointment Page</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact Page</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#doctors"><i class="fas fa-user-md"></i> Doctors Page</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#services"><i class="fas fa-concierge-bell"></i> Services Page</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#css-classes"><i class="fas fa-paint-brush"></i> CSS Classes</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#js-functions"><i class="fas fa-code"></i> JavaScript Functions</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#support"><i class="fas fa-headset"></i> Support </a> </li>
+            </ul>
+        </nav>
+        <div class="content p-4">
+            <div class="container">
+                <section id="introduction">
+                    <h1>Introduction</h1>
+                    <div class="intro-details mb-4">
+                        <p><strong>Theme Name:</strong> Clinic Template</p>
+                        <p><strong>Author:</strong> Yasoo</p>
+                        <p><strong>Version:</strong> 1.0</p>
+                        <p><strong>Description:</strong> The Clinic Template is designed to provide a professional and user-friendly interface for healthcare-related websites. It ensures a seamless experience for users and administrators alike, featuring a responsive design, modern layout, and easy customization.</p>
+                    </div>
+                    <p>Welcome to the comprehensive documentation for the Clinic Template. This guide aims to assist you in understanding, customizing, and implementing the template for your project efficiently and effectively.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Responsive design compatible with all devices</li>
+                        <li>Modern and clean layout</li>
+                        <li>Easy to customize and extend</li>
+                        <li>Comprehensive documentation</li>
+                        <li>Utilizes Bootstrap 5.3.3 for modern web standards</li>
+                    </ul>
+                </section>
+                <section id="getting-started">
+                    <h1>Getting Started</h1>
+                    <p>To begin using the Clinic Template, follow these steps:</p>
+                    <h2>Step 1: Download</h2>
+                    <p>Download the template files from the provided source. Ensure that you have extracted all the files into a directory of your choice.</p>
+                    <div class="container">
+                        <h2>File Structure</h2> <pre><code class="language-html">&lt;!-- File Structure --&gt;
+clinic/
+├── index.html
+├── about.html
+├── appointment.html
+├── doctors.html
+├── contact.html
+├── services.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   ├── images/
+</code></pre> </div>
+                    <h2>Step 2: Installation</h2>
+                    <p>Open the directory containing the extracted files. The main files and folders you will work with are:</p>
+                    <ul>
+                        <li><code>index.html</code> - The home page</li>
+                        <li><code>about.html</code> - About page</li>
+                        <li><code>appointment.html</code> - Appointment booking page</li>
+                        <li><code>contact.html</code> - Contact information page</li>
+                        <li><code>doctors.html</code> - Doctors profile page</li>
+                        <li><code>services.html</code> - Services information page</li>
+                        <li><code>assets</code> - Folder containing CSS, JavaScript, and image files</li>
+                    </ul>
+                    <h2>Step 3: Customization</h2>
+                    <p>Customize the template to fit your needs by editing the HTML, CSS, and JavaScript files located in their respective directories. Refer to the subsequent sections of this documentation for detailed information on each component.</p>
+                    <h2>Step 4: Deployment</h2>
+                    <p>Once you have customized the template, you can deploy it to your web server. Ensure all files are uploaded correctly and the website functions as intended across different browsers and devices.</p>
+                </section>
+                <section id="html-structure">
+                    <h1>HTML Structure</h1>
+                    <p>The template consists of several HTML files, each corresponding to a different page of the website. Here's an overview of the structure:</p>
+                    <ul>
+                        <li><code>index.html</code> - Home page</li>
+                        <li><code>about.html</code> - About page</li>
+                        <li><code>appointment.html</code> - Appointment page</li>
+                        <li><code>contact.html</code> - Contact page</li>
+                        <li><code>doctors.html</code> - Doctors page</li>
+                        <li><code>services.html</code> - Services page</li>
+                        <li><code>assets</code> - Contains CSS, JS, and image files</li>
+                    </ul>
+                </section>
+                <!-- 
+    ===================================
+    Framework & Libraries
+    ===================================
+-->
+                <section id="framework-libraries">
+                    <div class="container">
+                        <h2>Framework & Libraries</h2>
+                        <p>This template was built using the following frameworks and libraries. Each of these tools has been selected to ensure that the template is both performant and easy to work with.</p>
+                        <h3>Bootstrap 5.3.3</h3>
+                        <p><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> is the most popular CSS framework for developing responsive and mobile-first websites. It provides a robust grid system, pre-built components, and responsive utilities that make web development faster and easier.</p>
+                        <h3>Font Awesome</h3>
+                        <p><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> is a popular icon toolkit that provides vector icons and social logos. It's used throughout the template for icons in navigation, buttons, and more.</p>
+                        <h3>Slick Carousel</h3>
+                        <p><a href="https://kenwheeler.github.io/slick/" target="_blank">Slick Carousel</a> is a powerful and flexible carousel/slider library that allows you to create responsive sliders. It is used in the template for showcasing services, testimonials, and other key content.</p>
+                        <h3>Animate.css</h3>
+                        <p><a href="https://animate.style/" target="_blank">Animate.css</a> is a CSS library that provides simple yet elegant animations for your web elements. It is used to add subtle animations to various sections of the template, enhancing the user experience.</p>
+                        <h3>AOS (Animate On Scroll)</h3>
+                        <p><a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a> is a library that helps you animate elements as you scroll down the page. It is used to add smooth, eye-catching animations that make the template more interactive.</p>
+                        <h3>Google Fonts</h3>
+                        <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> is a library of free-to-use web fonts. This template uses Google Fonts to provide clean and modern typography that complements the overall design.</p>
+                    </div>
+                </section>
+                <section id="index">
+                    <h1>Index Page</h1>
+                    <p>The <code>index.html</code> file serves as the home page of the clinic template. It includes the following sections:</p>
+                    <h2>Hero Section</h2>
+                    <p>The hero section welcomes visitors with a compelling message and call-to-action buttons. It typically includes:</p>
+                    <ul>
+                        <li>A headline introducing the clinic</li>
+                        <li>Subheadline with a brief description</li>
+                        <li>Primary and secondary call-to-action buttons</li>
+                    </ul> <pre><code class="language-html">&lt;section class="home-hero"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Welcome to Our Clinic&lt;/h1&gt;
+        &lt;p&gt;Providing exceptional healthcare services.&lt;/p&gt;
+        &lt;a href="#services" class="btn btn-primary"&gt;Our Services&lt;/a&gt;
+        &lt;a href="#contact" class="btn btn-secondary"&gt;Contact Us&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Services Section</h2>
+                    <p>This section highlights the key services offered by the clinic. It includes:</p>
+                    <ul>
+                        <li>Service titles and brief descriptions</li>
+                        <li>Icons or images representing each service</li>
+                        <li>Links to detailed service pages</li>
+                    </ul> <pre><code class="language-html">&lt;section class="home-services"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Our Services&lt;/h2&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="service-item"&gt;
+                    &lt;i class="fas fa-heartbeat"&gt;&lt;/i&gt;
+                    &lt;h3&gt;Cardiology&lt;/h3&gt;
+                    &lt;p&gt;Providing the best cardiac care.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other services --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Doctors Section</h2>
+                    <p>This section introduces the clinic's medical team, featuring:</p>
+                    <ul>
+                        <li>Photos and names of the doctors</li>
+                        <li>Specialties and qualifications</li>
+                        <li>Short biographies and contact information</li>
+                    </ul> <pre><code class="language-html">&lt;section class="home-doctors"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Meet Our Doctors&lt;/h2&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="doctor-item"&gt;
+                    &lt;img src="assets/images/doctor1.jpg" alt="Doctor 1"&gt;
+                    &lt;h3&gt;Dr. John Doe&lt;/h3&gt;
+                    &lt;p&gt;Cardiologist&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other doctors --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Testimonials Section</h2>
+                    <p>This section showcases patient testimonials, including:</p>
+                    <ul>
+                        <li>Quotes from satisfied patients</li>
+                        <li>Names and photos of the patients</li>
+                        <li>Overall rating or feedback</li>
+                    </ul> <pre><code class="language-html">&lt;section class="home-testimonials"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;What Our Patients Say&lt;/h2&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;div class="testimonial-item"&gt;
+                    &lt;p&gt;"Great service and friendly staff!"&lt;/p&gt;
+                    &lt;h3&gt;Jane Smith&lt;/h3&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other testimonials --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Contact Section</h2>
+                    <p>This section provides contact information and a form for visitors to reach out. It typically includes:</p>
+                    <ul>
+                        <li>Contact details (address, phone number, email)</li>
+                        <li>Contact form for visitors to send messages</li>
+                        <li>Google Maps integration for the clinic's location</li>
+                    </ul> <pre><code class="language-html">&lt;section class="home-contact"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Contact Us&lt;/h2&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;div class="contact-info"&gt;
+                    &lt;p&gt;&lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt; 123 Clinic St, Health City&lt;/p&gt;
+                    &lt;p&gt;&lt;i class="fas fa-phone"&gt;&lt;/i&gt; (123) 456-7890&lt;/p&gt;
+                    &lt;p&gt;&lt;i class="fas fa-envelope"&gt;&lt;/i&gt; info@clinic.com&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;form&gt;
+                    &lt;div class="mb-3"&gt;
+                        &lt;label for="name" class="form-label"&gt;Name&lt;/label&gt;
+                        &lt;input type="text" class="form-control" id="name" required&gt;
+                    &lt;/div&gt;
+                    &lt;div class="mb-3"&gt;
+                        &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
+                        &lt;input type="email" class="form-control" id="email" required&gt;
+                    &lt;/div&gt;
+                    &lt;div class="mb-3"&gt;
+                        &lt;label for="message" class="form-label"&gt;Message&lt;/label&gt;
+                        &lt;textarea class="form-control" id="message" rows="4" required&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+                    &lt;button type="submit" class="btn btn-primary"&gt;Send Message&lt;/button&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre> </section>
+                <section id="about">
+                    <h1>About Page</h1>
+                    <p>The <code>about.html</code> file provides information about the clinic, including its mission, vision, and history. It includes the following sections:</p>
+                    <h2>Introduction Section</h2>
+                    <p>This section introduces the clinic, providing a brief overview of its mission and vision. It typically includes:</p>
+                    <ul>
+                        <li>A headline introducing the clinic</li>
+                        <li>A brief description of the clinic's mission and vision</li>
+                    </ul> <pre><code class="language-html">&lt;section class="about-introduction"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;About Our Clinic&lt;/h1&gt;
+        &lt;p&gt;Our mission is to provide exceptional healthcare services to our community.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>History Section</h2>
+                    <p>This section provides a brief history of the clinic, including significant milestones and achievements. It includes:</p>
+                    <ul>
+                        <li>A headline introducing the history section</li>
+                        <li>A timeline or list of significant milestones</li>
+                    </ul> <pre><code class="language-html">&lt;section class="about-history"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Our History&lt;/h2&gt;
+        &lt;p&gt;Since our establishment in 1990, we have been committed to delivering quality healthcare.&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;1990: Clinic founded&lt;/li&gt;
+            &lt;li&gt;2000: Expanded to include a new wing&lt;/li&gt;
+            &lt;li&gt;2010: Introduced advanced medical technologies&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Team Section</h2>
+                    <p>This section introduces the clinic's team, featuring:</p>
+                    <ul>
+                        <li>Photos and names of key team members</li>
+                        <li>Roles and qualifications</li>
+                        <li>Short biographies</li>
+                    </ul> <pre><code class="language-html">&lt;section class="about-team"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Our Team&lt;/h2&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="team-member"&gt;
+                    &lt;img src="assets/images/team1.jpg" alt="Team Member 1"&gt;
+                    &lt;h3&gt;Dr. Jane Smith&lt;/h3&gt;
+                    &lt;p&gt;Chief Medical Officer&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other team members --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre> </section>
+                <section id="appointment">
+                    <h1>Appointment Page</h1>
+                    <p>The <code>appointment.html</code> file allows visitors to book appointments with the clinic. It includes the following sections:</p>
+                    <h2>Appointment Form Section</h2>
+                    <p>This section provides a form for visitors to book appointments. It typically includes:</p>
+                    <ul>
+                        <li>A headline inviting users to book an appointment</li>
+                        <li>Form fields for user information (name, email, phone, etc.)</li>
+                        <li>Form fields for appointment details (date, time, doctor, etc.)</li>
+                        <li>A submit button to send the appointment request</li>
+                    </ul> <pre><code class="language-html">&lt;section class="appointment-form"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Book an Appointment&lt;/h1&gt;
+        &lt;form&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="name" class="form-label"&gt;Name&lt;/label&gt;
+                &lt;input type="text" class="form-control" id="name" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
+                &lt;input type="email" class="form-control" id="email" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="phone" class="form-label"&gt;Phone&lt;/label&gt;
+                &lt;input type="tel" class="form-control" id="phone" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="date" class="form-label"&gt;Date&lt;/label&gt;
+                &lt;input type="date" class="form-control" id="date" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="time" class="form-label"&gt;Time&lt;/label&gt;
+                &lt;input type="time" class="form-control" id="time" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="doctor" class="form-label"&gt;Doctor&lt;/label&gt;
+                &lt;select class="form-select" id="doctor" required&gt;
+                    &lt;option value="" disabled selected&gt;Select Doctor&lt;/option&gt;
+                    &lt;option value="dr-jane"&gt;Dr. Jane Smith&lt;/option&gt;
+                    &lt;option value="dr-john"&gt;Dr. John Doe&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Confirmation Section</h2>
+                    <p>This section provides confirmation to the user that their appointment request has been received. It typically includes:</p>
+                    <ul>
+                        <li>A thank you message</li>
+                        <li>Details of the submitted appointment request</li>
+                        <li>Contact information for further inquiries</li>
+                    </ul> <pre><code class="language-html">&lt;section class="appointment-confirmation"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Thank You!&lt;/h1&gt;
+        &lt;p&gt;Your appointment request has been received. We will contact you shortly to confirm the details.&lt;/p&gt;
+        &lt;p&gt;For any urgent inquiries, please contact us at (123) 456-7890 or info@clinic.com.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre> </section>
+                <section id="contact">
+                    <h1>Contact Page</h1>
+                    <p>The <code>contact.html</code> file allows visitors to get in touch with the clinic. It includes the following sections:</p>
+                    <h2>Contact Form Section</h2>
+                    <p>This section provides a form for visitors to send messages or inquiries to the clinic. It typically includes:</p>
+                    <ul>
+                        <li>A headline inviting users to contact the clinic</li>
+                        <li>Form fields for user information (name, email, subject, etc.)</li>
+                        <li>A message textarea for the inquiry</li>
+                        <li>A submit button to send the message</li>
+                    </ul> <pre><code class="language-html">&lt;section class="contact-form"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Contact Us&lt;/h1&gt;
+        &lt;form&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="name" class="form-label"&gt;Name&lt;/label&gt;
+                &lt;input type="text" class="form-control" id="name" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
+                &lt;input type="email" class="form-control" id="email" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="subject" class="form-label"&gt;Subject&lt;/label&gt;
+                &lt;input type="text" class="form-control" id="subject" required&gt;
+            &lt;/div&gt;
+            &lt;div class="mb-3"&gt;
+                &lt;label for="message" class="form-label"&gt;Message&lt;/label&gt;
+                &lt;textarea class="form-control" id="message" rows="5" required&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Send Message&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Contact Information Section</h2>
+                    <p>This section provides the clinic's contact information, including address, phone number, and email. It includes:</p>
+                    <ul>
+                        <li>A headline with contact information</li>
+                        <li>Address, phone number, and email of the clinic</li>
+                        <li>Additional details like working hours</li>
+                    </ul> <pre><code class="language-html">&lt;section class="contact-information"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Our Contact Information&lt;/h2&gt;
+        &lt;p&gt;&lt;strong&gt;Address:&lt;/strong&gt; 123 Clinic Street, City, Country&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; info@clinic.com&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Working Hours:&lt;/strong&gt; Monday - Friday: 9:00 AM - 5:00 PM&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Google Maps Section</h2>
+                    <p>This section embeds a Google Map showing the clinic's location. It typically includes:</p>
+                    <ul>
+                        <li>An embedded Google Map iframe</li>
+                        <li>Optional text or markers to highlight the clinic's location</li>
+                    </ul> <pre><code class="language-html">&lt;section class="contact-map"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Our Location&lt;/h2&gt;
+        &lt;div class="map-container"&gt;
+            &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509618!2d144.95373531568154!3d-37.81627974202148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727d4e7e1cb5e3!2sClinic!5e0!3m2!1sen!2sau!4v1614147944058!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre> </section>
+                <section id="doctors">
+                    <h1>Doctors Page</h1>
+                    <p>The <code>doctors.html</code> file presents information about the clinic's doctors, including their profiles and specialties. It includes the following sections:</p>
+                    <h2>Doctors List Section</h2>
+                    <p>This section displays a list of doctors, featuring their photos, names, specialties, and brief biographies. It typically includes:</p>
+                    <ul>
+                        <li>A headline introducing the doctors</li>
+                        <li>A grid or list layout of doctor profiles</li>
+                        <li>Photos, names, specialties, and brief biographies of each doctor</li>
+                    </ul> <pre><code class="language-html">&lt;section class="doctors-list"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Meet Our Doctors&lt;/h1&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="doctor-profile"&gt;
+                    &lt;img src="assets/images/doctor1.jpg" alt="Doctor 1"&gt;
+                    &lt;h3&gt;Dr. Jane Smith&lt;/h3&gt;
+                    &lt;p&gt;Cardiologist&lt;/p&gt;
+                    &lt;p&gt;Dr. Jane Smith has over 20 years of experience in cardiology and is dedicated to providing the best care for her patients.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="doctor-profile"&gt;
+                    &lt;img src="assets/images/doctor2.jpg" alt="Doctor 2"&gt;
+                    &lt;h3&gt;Dr. John Doe&lt;/h3&gt;
+                    &lt;p&gt;Neurologist&lt;/p&gt;
+                    &lt;p&gt;Dr. John Doe is a leading expert in neurology, specializing in the treatment of neurological disorders.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other doctors --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Specialties Section</h2>
+                    <p>This section highlights the specialties of the clinic, providing detailed information about each specialty and the doctors associated with them. It includes:</p>
+                    <ul>
+                        <li>A headline introducing the specialties</li>
+                        <li>A list or grid of specialties</li>
+                        <li>Descriptions and associated doctors for each specialty</li>
+                    </ul> <pre><code class="language-html">&lt;section class="doctors-specialties"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Our Specialties&lt;/h2&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;div class="specialty"&gt;
+                    &lt;h3&gt;Cardiology&lt;/h3&gt;
+                    &lt;p&gt;Our cardiology department offers comprehensive care for all heart-related conditions, led by Dr. Jane Smith.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;div class="specialty"&gt;
+                    &lt;h3&gt;Neurology&lt;/h3&gt;
+                    &lt;p&gt;Our neurology department, led by Dr. John Doe, specializes in diagnosing and treating neurological disorders.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other specialties --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre> </section>
+                <section id="services">
+                    <h1>Services Page</h1>
+                    <p>The <code>services.html</code> file showcases the various services offered by the clinic. It includes the following sections:</p>
+                    <h2>Services List Section</h2>
+                    <p>This section provides a list of the services offered by the clinic, detailing each service's specifics. It typically includes:</p>
+                    <ul>
+                        <li>A headline introducing the services</li>
+                        <li>A list or grid layout of services</li>
+                        <li>Descriptions of each service</li>
+                    </ul> <pre><code class="language-html">&lt;section class="services-list"&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Our Services&lt;/h1&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="service-item"&gt;
+                    &lt;h3&gt;Cardiology&lt;/h3&gt;
+                    &lt;p&gt;Comprehensive cardiology services including diagnostics, treatment, and prevention of heart conditions.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="service-item"&gt;
+                    &lt;h3&gt;Neurology&lt;/h3&gt;
+                    &lt;p&gt;Advanced neurological care for the diagnosis and treatment of nervous system disorders.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="service-item"&gt;
+                    &lt;h3&gt;Orthopedics&lt;/h3&gt;
+                    &lt;p&gt;Expert orthopedic care for musculoskeletal issues, including surgery and rehabilitation.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Repeat for other services --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    <h2>Service Details Section</h2>
+                    <p>This section provides detailed information about each service, often including:</p>
+                    <ul>
+                        <li>Detailed descriptions</li>
+                        <li>Subsections for different aspects of the service</li>
+                        <li>Visual aids or additional resources</li>
+                    </ul> <pre><code class="language-html">&lt;section class="service-details"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Service Details&lt;/h2&gt;
+        &lt;div class="service"&gt;
+            &lt;h3&gt;Cardiology&lt;/h3&gt;
+            &lt;p&gt;Our cardiology department provides a full range of services for heart health, including stress testing, echocardiography, and interventional procedures.&lt;/p&gt;
+            &lt;p&gt;We are committed to preventive care and early diagnosis to ensure the best possible outcomes for our patients.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="service"&gt;
+            &lt;h3&gt;Neurology&lt;/h3&gt;
+            &lt;p&gt;Our neurology department specializes in diagnosing and treating conditions such as stroke, epilepsy, and multiple sclerosis.&lt;/p&gt;
+            &lt;p&gt;We utilize the latest technology and treatments to provide comprehensive neurological care.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="service"&gt;
+            &lt;h3&gt;Orthopedics&lt;/h3&gt;
+            &lt;p&gt;Our orthopedic services include joint replacement, sports medicine, and fracture care.&lt;/p&gt;
+            &lt;p&gt;We focus on restoring function and mobility to help our patients return to their normal activities.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- Repeat for other services --&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre> </section>
+                <section id="css-classes">
+                    <h1>CSS Classes</h1>
+                    <p>This section provides an overview of the CSS classes used throughout the template, ensuring a clear and concise understanding for customization.</p>
+                    <h2>Common CSS Classes</h2>
+                    <p>The template includes several custom CSS classes to style various elements. Key classes include:</p>
+                    <ul>
+                        <li><code>.container</code> - Defines the max-width and horizontal padding for content</li>
+                        <li><code>.row</code> - Utilizes Flexbox to align and wrap elements</li>
+                        <li><code>.col-md-4</code> - Specifies a column taking up one-third of the container on medium screens</li>
+                        <li><code>.item</code> - Styles individual items with padding, margin, border, and box-shadow</li>
+                    </ul>
+                    <h2>Index Page CSS Classes</h2>
+                    <p>Specific classes for the index page:</p>
+                    <ul>
+                        <li><code>.home-banner</code> - Styles the banner section on the home page</li>
+                        <li><code>.home-banner h1</code> - Styles the heading in the banner</li>
+                        <li><code>.home-banner p</code> - Styles the paragraph in the banner</li>
+                        <li><code>.home-banner .btn</code> - Styles the button in the banner</li>
+                    </ul>
+                    <h2>About Page CSS Classes</h2>
+                    <p>Specific classes for the about page:</p>
+                    <ul>
+                        <li><code>.about-section</code> - Styles the main section on the about page</li>
+                        <li><code>.about-section h2</code> - Styles the heading in the about section</li>
+                        <li><code>.about-section p</code> - Styles the paragraph in the about section</li>
+                        <li><code>.about-section .team-member</code> - Styles individual team members</li>
+                        <li><code>.about-section .team-member img</code> - Styles the images of team members</li>
+                        <li><code>.about-section .team-member h3</code> - Styles the heading for team members</li>
+                        <li><code>.about-section .team-member p</code> - Styles the paragraph for team members</li>
+                    </ul>
+                    <h2>Appointment Page CSS Classes</h2>
+                    <p>Specific classes for the appointment page:</p>
+                    <ul>
+                        <li><code>.appointment-form</code> - Styles the appointment form</li>
+                        <li><code>.appointment-form h2</code> - Styles the heading in the appointment form</li>
+                        <li><code>.appointment-form .form-group</code> - Styles individual form groups</li>
+                        <li><code>.appointment-form .form-group label</code> - Styles the labels in form groups</li>
+                        <li><code>.appointment-form .form-group input, .appointment-form .form-group select, .appointment-form .form-group textarea</code> - Styles the inputs, selects, and textareas in form groups</li>
+                        <li><code>.appointment-form .btn</code> - Styles the button in the appointment form</li>
+                    </ul>
+                    <h2>Doctors Page CSS Classes</h2>
+                    <p>Specific classes for the doctors page:</p>
+                    <ul>
+                        <li><code>.doctors-section</code> - Styles the main section on the doctors page</li>
+                        <li><code>.doctors-section h2</code> - Styles the heading in the doctors section</li>
+                        <li><code>.doctors-section .doctor-item</code> - Styles individual doctor items</li>
+                        <li><code>.doctors-section .doctor-item img</code> - Styles the images of doctors</li>
+                        <li><code>.doctors-section .doctor-item h3</code> - Styles the heading for doctor items</li>
+                        <li><code>.doctors-section .doctor-item p</code> - Styles the paragraph for doctor items</li>
+                    </ul>
+                    <h2>Contact Page CSS Classes</h2>
+                    <p>Specific classes for the contact page:</p>
+                    <ul>
+                        <li><code>.contact-form</code> - Styles the contact form</li>
+                        <li><code>.contact-form h2</code> - Styles the heading in the contact form</li>
+                        <li><code>.contact-form .form-group</code> - Styles individual form groups</li>
+                        <li><code>.contact-form .form-group label</code> - Styles the labels in form groups</li>
+                        <li><code>.contact-form .form-group input, .contact-form .form-group textarea</code> - Styles the inputs and textareas in form groups</li>
+                        <li><code>.contact-form .btn</code> - Styles the button in the contact form</li>
+                        <li><code>.contact-information</code> - Styles the contact information section</li>
+                        <li><code>.contact-information h2</code> - Styles the heading in the contact information section</li>
+                        <li><code>.contact-information p</code> - Styles the paragraph in the contact information section</li>
+                        <li><code>.contact-map</code> - Styles the map section</li>
+                        <li><code>.contact-map h2</code> - Styles the heading in the map section</li>
+                        <li><code>.contact-map .map-container</code> - Styles the map container</li>
+                    </ul>
+                    <h2>Services Page CSS Classes</h2>
+                    <p>Specific classes for the services page:</p>
+                    <ul>
+                        <li><code>.services-list</code> - Styles the list of services</li>
+                        <li><code>.services-list h1</code> - Styles the heading in the services list</li>
+                        <li><code>.services-list .service-item</code> - Styles individual service items</li>
+                        <li><code>.service-details</code> - Styles the details of a service</li>
+                        <li><code>.service-details h2</code> - Styles the heading in the service details</li>
+                        <li><code>.service-details .service</code> - Styles individual services in the details section</li>
+                        <li><code>.service-details .service h3</code> - Styles the heading for services in the details section</li>
+                        <li><code>.service-details .service p</code> - Styles the paragraph for services in the details section</li>
+                    </ul>
+                </section>
+                <section id="javascript-functions">
+                    <h1>JavaScript Functions</h1>
+                    <p>This section provides an overview of the JavaScript functions used throughout the template, detailing their purpose and implementation.</p>
+                    <h2>Common JavaScript Functions</h2>
+                    <p>The template includes several JavaScript functions to enhance user interaction and functionality:</p>
+                    <ul>
+                        <li><code>initializeCarousel()</code> - Initializes the carousel component on the home page</li>
+                        <li><code>toggleMobileMenu()</code> - Toggles the mobile menu visibility</li>
+                        <li><code>validateForm()</code> - Validates form inputs before submission</li>
+                        <li><code>scrollToSection()</code> - Smoothly scrolls to a specific section on the page</li>
+                    </ul>
+                    <h2>Home Page JavaScript Functions</h2>
+                    <p>Specific functions for the home page:</p>
+                    <ul>
+                        <li><code>initializeHomeCarousel()</code> - Initializes the carousel on the home page with specific settings</li>
+                        <li><code>playHeroVideo()</code> - Plays the background video in the hero section</li>
+                    </ul>
+                    <h2>About Page JavaScript Functions</h2>
+                    <p>Specific functions for the about page:</p>
+                    <ul>
+                        <li><code>toggleTeamMemberDetails()</code> - Toggles the visibility of detailed information for team members</li>
+                    </ul>
+                    <h2>Appointment Page JavaScript Functions</h2>
+                    <p>Specific functions for the appointment page:</p>
+                    <ul>
+                        <li><code>initializeDatePicker()</code> - Initializes the date picker for appointment booking</li>
+                        <li><code>validateAppointmentForm()</code> - Validates the appointment form inputs before submission</li>
+                    </ul>
+                    <h2>Doctors Page JavaScript Functions</h2>
+                    <p>Specific functions for the doctors page:</p>
+                    <ul>
+                        <li><code>filterDoctors()</code> - Filters the list of doctors based on selected criteria</li>
+                        <li><code>initializeDoctorCarousel()</code> - Initializes the carousel for showcasing doctors</li>
+                    </ul>
+                    <h2>Contact Page JavaScript Functions</h2>
+                    <p>Specific functions for the contact page:</p>
+                    <ul>
+                        <li><code>initializeMap()</code> - Initializes the Google Map with the clinic's location</li>
+                        <li><code>validateContactForm()</code> - Validates the contact form inputs before submission</li>
+                    </ul>
+                    <h2>Services Page JavaScript Functions</h2>
+                    <p>Specific functions for the services page:</p>
+                    <ul>
+                        <li><code>initializeServiceAccordion()</code> - Initializes the accordion component for service details</li>
+                        <li><code>filterServices()</code> - Filters the list of services based on selected criteria</li>
+                    </ul>
+                </section>
+                <!-- 
+    ===================================
+    Support
+    ===================================
+-->
+                <section id="support">
+                    <div class="container">
+                        <h2>Support</h2>
+                        <p>Thank you for purchasing our Clinic HTML Template. We are committed to providing the best possible support for our users. If you encounter any issues or have questions regarding the template, please feel free to reach out to us.</p>
+                        <h3>How to Get Support</h3>
+                        <p>You can contact us via email at <a href="mailto:yasoowork4@gmail.com">yasoowork4@gmail.com</a>. Please include the following information when you reach out:</p>
+                        <ul>
+                            <li>A detailed description of the issue</li>
+                            <li>Screenshots or video (if applicable)</li>
+                        </ul>
+                        <h3>Support Hours</h3>
+                        <p>Our support team is available from Monday to Friday, 9 AM to 5 PM (GMT).</p>
+                        <h3>Response Time</h3>
+                        <p>We aim to respond to all support requests within 24-48 hours during business days.</p>
+                        <h3>What's Included in Support</h3>
+                        <ul>
+                            <li>Assistance with reported bugs and issues</li>
+                            <li>Help with questions regarding the template's features and functionality</li>
+                            <li>Guidance on template installation and usage</li>
+                        </ul>
+                        <h3>What's Not Included in Support</h3>
+                        <ul>
+                            <li>Customization and modification requests</li>
+                            <li>Support for third-party plugins or services</li>
+                            <li>Issues related to the environment setup (e.g., server configuration)</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- 
+    ===================================
+    Footer
+    ===================================
+-->
+                <footer id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>&copy; 2024 Clinic Template by Yasoo. All Rights Reserved.</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <ul class="social-links">
+                                    <li><a href="https://www.facebook.com/profile.php?id=1196051616" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                    <li><a href="mailto:yasoowork4@gmail.com" target="_blank"><i class="fas fa-envelope"></i> gmail</a></li>
+                                    <li><a href="tel:+2001091080769" target="_blank"><i class="fab fa-whatsapp"></i> +2001091080769</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+</body>
+
+</html>
